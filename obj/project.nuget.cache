@@ -1,11 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "jGKy/Y5iBNL5QQSTNbQIOM5/OrCvMjwxRq9a1/Py5Fs0CV+Y3vWStWz0b4g7dZdk/9cWXTlfbcFVUCti18RzFQ==",
+  "dgSpecHash": "6Jvap9k9qGd/1Shf+gki5CKSCncDmVrd4DXs3uVsJDtl6ir5D8SQBT1U+lTwmNFpSu5WIxWWjbjIAuRjUOXffg==",
   "success": true,
   "projectFilePath": "/Users/michaelgroenewegenvanderweijden/Documents/Courses/freeCodeCamp.org/NET CORE/dotnet-api/dotnet-api.csproj",
   "expectedPackageFiles": [
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/aspnetcore.healthchecks.mongodb/6.0.1/aspnetcore.healthchecks.mongodb.6.0.1.nupkg.sha512",
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/dnsclient/1.4.0/dnsclient.1.4.0.nupkg.sha512",
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.diagnostics.healthchecks/6.0.0/microsoft.extensions.diagnostics.healthchecks.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.abstractions/6.0.0/microsoft.extensions.diagnostics.healthchecks.abstractions.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.fileproviders.abstractions/6.0.0/microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.hosting.abstractions/6.0.0/microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/mongodb.bson/2.14.1/mongodb.bson.2.14.1.nupkg.sha512",
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/mongodb.driver/2.14.1/mongodb.driver.2.14.1.nupkg.sha512",
@@ -17,7 +27,7 @@
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "/Users/michaelgroenewegenvanderweijden/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
-    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "/Users/michaelgroenewegenvanderweijden/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
