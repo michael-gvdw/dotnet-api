@@ -6,11 +6,11 @@ namespace dotnet_api.Repositories
 {
     public interface IItemsRepository
     {
-        Item? GetItem(Guid id);
-        IEnumerable<Item> GetItems();
-        void CreateItem(Item item);
-        void UpdatedItem(Item item);
-        void DeleteItem(Guid id);
+        Task<Item?> GetItemAsync(Guid id);
+        Task<IEnumerable<Item>> GetItemsAsync();
+        Task CreateItemAsync(Item item);
+        Task UpdatedItemAsync(Item item);
+        Task DeleteItemAsync(Guid id);
     }
 
     public class ItemsRepository : IItemsRepository
@@ -26,32 +26,32 @@ namespace dotnet_api.Repositories
             itemsCollection = database.GetCollection<Item>(collectionName);
         }
 
-        public void CreateItem(Item item)
+        public async Task CreateItemAsync(Item item)
         {
-            this.itemsCollection.InsertOne(item);
+            await this.itemsCollection.InsertOneAsync(item);
         }
 
-        public void DeleteItem(Guid id)
+        public async Task DeleteItemAsync(Guid id)
         {
             var filter = this.filterDefinitionBuilder.Eq(existingItem => existingItem.id, id);
-            this.itemsCollection.DeleteOne(filter);
+            await this.itemsCollection.DeleteOneAsync(filter);
         }
 
-        public Item? GetItem(Guid id)
+        public async Task<Item?> GetItemAsync(Guid id)
         {
             var filter = this.filterDefinitionBuilder.Eq(item => item.id, id);
-            return this.itemsCollection.Find(filter).SingleOrDefault();
+            return await this.itemsCollection.Find(filter).SingleOrDefaultAsync();
         }
 
-        public IEnumerable<Item> GetItems()
+        public async Task<IEnumerable<Item>> GetItemsAsync()
         {
-            return itemsCollection.Find(new BsonDocument()).ToList();
+            return await this.itemsCollection.Find(new BsonDocument()).ToListAsync();
         }
 
-        public void UpdatedItem(Item item)
+        public async Task UpdatedItemAsync(Item item)
         {
             var filter = this.filterDefinitionBuilder.Eq(existingItem => existingItem.id, item.id);
-            this.itemsCollection.ReplaceOne(filter, item);
+            await this.itemsCollection.ReplaceOneAsync(filter, item);
         }
     }
 }
